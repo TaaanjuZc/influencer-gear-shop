@@ -1,0 +1,67 @@
+@media screen and (max-width: 1200px) {
+  header {
+    padding: 0 20px;
+  }
+}
+
+
+/* for tablet or medium devices */
+@media screen and (max-width: 992px) {
+  main {
+    padding: 20px;
+  }
+  .header-main-container{
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+  }
+  nav {
+    flex-direction: column;
+  }
+  .header-main-content {
+    text-align: center;
+  }
+  .products-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 772px) {
+  .title-1 {
+    color: #3a3a3a;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .header-main-container .description {
+    margin: 16px 0px;
+  }
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: space-evenly !important;
+    margin-right: 0px;
+    gap: 20px;
+  }
+  .featured {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .featured-content {
+    text-align: center;
+    padding-left: 0;
+  }
+}
+
+/* for mobile devices */
+@media screen and (max-width: 576px) {
+  .sponsors {
+    margin: 5rem 0;
+  }
+  .products-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .featured-content .title-1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
